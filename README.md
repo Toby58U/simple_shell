@@ -1,6 +1,6 @@
-Simple shell readme
+Description
 
-This project is a simple Shell interface
-
-Task 0 - Write a beautiful code that passes the Betty checks.
-Task 1 - Write a UNIX command line interpreter.
+This project is an implementation of the shell created as a Milestone Project for the C code at ALX Africa Software Engineering.
+The gates of shell is a project in the first trimester, that helps student to understand the advanced concepts behind the shell program including process, system call, bit manipulation, file managment, error handling ...
+Shell is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh).
+This program was written entirely in C Language.
