@@ -32,4 +32,13 @@ ssize_t tread_buf(info_t *info, char *buff, size_t *n);
 int _tgetline(info_t *info, char **pntr, size_t *length);
 void siginthandler(__attribute__((unused))int sig_numb);
 
+/* ttokenize.c */
+char **strtowrd(char *string, char *d);
+char **strtowrdii(char *string, char d);
+
+/* tgetenv.c */
+char **tget_environ(info_t *info);
+int _tunsetenv(info_t *info, char *svar);
+int _tsetenv(info_t *info, char *svar, char *svalue);
+
 #endif
