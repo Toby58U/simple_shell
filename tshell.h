@@ -41,4 +41,34 @@ char **tget_environ(info_t *info);
 int _tunsetenv(info_t *info, char *svar);
 int _tsetenv(info_t *info, char *svar, char *svalue);
 
+/* tgetinfo.c */
+void tclear_info(info_t *info);
+void tset_info(info_t *info, char **av);
+void tfree_info(info_t *info, int all);
+
+/* tenviron.c */
+int _mycurrenv(info_t *info);
+char *_tgetenv(info_t *info, const char *envname);
+int _mysetenvt(info_t *info);
+int _myunsetenvt(info_t *info);
+int populate_envt_list(info_t *info);
+
+/* tstring.c */
+char *_strcat(char *destbuff, char *srcbuff);
+char *starts_with(const char *haystack, const char *needle);
+int _strcmp(char *z1, char *z2);
+int _strlen(char *z);
+
+/* 1-tstring.c */
+char *_strcpy(char *destn, char *srce);
+char *_strdup(const char *string);
+int _putchar(char x);
+void _puts(char *string);
+
+/* tshell_loop.c */
+int hsh(info_t *info, char **av);
+int find_builtin(info_t *info);
+void find_cmnd(info_t *info);
+void fork_cmnd(info_t *info);
+
 #endif
