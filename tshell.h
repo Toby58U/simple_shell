@@ -129,4 +129,11 @@ int print_d(int, int);
 char *convert_number(long int, int, int);
 void remove_comments(char *);
 
+/* my_mem.c */
+int befree(void **);
+
+/* my_tokenize.c */
+char **split_string(char *, char *);
+char **split_string_by_char(char *, char);
+
 #endif
