@@ -141,5 +141,9 @@ ssize_t get_input(info_t *);
 int _getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 
+/* my_geEtEnv.c */
+char **get_environ(info_t *);
+int _unset_env(info_t *, char *);
+int _set_env(info_t *, char *, char *);
 
 #endif
